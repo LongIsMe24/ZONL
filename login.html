@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ZONL Store</title>
+        <link
+            rel="icon"
+            href="\assets\img\Akatsuki-Logo-PNG-Pic.png"
+            type="image/png"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/font/themify-icons-font/themify-icons/themify-icons.css"
+        />
+        <link rel="stylesheet" href="CSS/login.css" />
+    </head>
+    <body>
+        <div class="login">
+            <div class="background-login">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.webp" />
+                    </a>
+                </div>
+                <div class="type">
+                    <p>Đăng Nhập</p>
+                    <form id="login-form" onsubmit="return validateForm()">
+                        <input
+                            type="text"
+                            placeholder="Tên tài khoản"
+                            id="username"
+                        />
+                        <span class="error-message" id="username-error"></span>
+                        <input
+                            type="password"
+                            placeholder="Mật Khẩu"
+                            id="password"
+                        />
+                        <span class="error-message" id="password-error"></span>
+                        <input type="submit" value="Đăng nhập" />
+                    </form>
+                    <div class="register">
+                        <span>Bạn chưa đăng kí ?</span>
+                        <a href="register.html"> Đăng kí ngay </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="Js/App.js"></script>
+    </body>
+</html>

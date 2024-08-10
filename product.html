@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="CSS/product.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        />
+    </head>
+    <body>
+        <div>
+            <header>
+                <div class="col1-header">
+                    <a href="index.html">
+                        <img src="img/logo.webp" alt="Logo" />
+                    </a>
+                </div>
+                <div class="col2-header">
+                    <ul id="header-bar">
+                        <a href="index.html">Trang Chủ</a>
+                        <a href="product.html">Sản Phẩm</a>
+                        <a href="">Store</a>
+                    </ul>
+                </div>
+                <div class="col3-header">
+                    <div class="col-user">
+                        <a href="register.html"
+                            ><i class="fa-regular fa-user"></i>
+                        </a>
+                    </div>
+                    <div class="col-cart">
+                        <a onclick="showcart(event)" href=""
+                            ><i class="fa-solid fa-cart-arrow-down"></i
+                        ></a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div id="showcart">
+            <table>
+                <tr>
+                    <th>STT</th>
+                    <th>Hình</th>
+                    <th>Tên Sản Phẩm</th>
+                    <th>Đơn Giá</th>
+                    <th>Số Lượng</th>
+                    <th>Thành Tiền</th>
+                </tr>
+                <tbody id="mycart"></tbody>
+            </table>
+            <a href="cart.html">Thanh Toán</a>
+            <button id="xoatatca" onclick="xoatatca()">Xoá tất cả</button>
+        </div>
+        <div class="product">
+            <h1>Áo</h1>
+            <div class="Row1">
+                <div class="boxsp">
+                    <img src="img/ao1.jpg" alt="" />
+                    <div class="product-name">
+                        <a href="Ao1.html">Áo Thun Kany West</a>
+                    </div>
+                    <div class="price-bpx">
+                        <span>250.000đ</span>
+                    </div>
+                    <input
+                        type="number"
+                        name="soluong"
+                        min="1"
+                        max="10"
+                        value="1"
+                    />
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp">
+                    <img src="img/ao2.jpg" alt="" />
+                    <div class="product-name">
+                        <a href="">Áo Thun Vintage</a>
+                    </div>
+                    <div class="price-bpx">
+                        <span>250.000đ</span>
+                    </div>
+                    <input
+                        type="number"
+                        name="soluong"
+                        min="1"
+                        max="10"
+                        value="1"
+                    />
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp">
+                    <img src="img/ao3.jpg" alt="" />
+                    <div class="product-name">
+                        <a href="">Áo Thun Rider</a>
+                    </div>
+                    <div class="price-bpx">
+                        <span>250.000đ</span>
+                    </div>
+                    <input
+                        type="number"
+                        name="soluong"
+                        min="1"
+                        max="10"
+                        value="1"
+                    />
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp">
+                    <img src="img/ao4.jpg" alt="" />
+                    <div class="product-name">
+                        <a href="">Áo Thun New York</a>
+                    </div>
+                    <div class="price-bpx">
+                        <span>250.000đ</span>
+                    </div>
+                    <input
+                        type="number"
+                        name="soluong"
+                        min="1"
+                        max="10"
+                        value="1"
+                    />
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp">
+                    <img src="img/ao5.jpg" alt="" />
+                    <div class="product-name">
+                        <a href="">Áo Thun Đen</a>
+                    </div>
+                    <div class="price-bpx">
+                        <span>250.000đ</span>
+                    </div>
+                    <input
+                        type="number"
+                        name="soluong"
+                        min="1"
+                        max="10"
+                        value="1"
+                    />
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+            </div>
+
+            <div class="Row2">
+                <div class="boxsp">
+                    <img src="img/ao6.jpg" alt="" />
+                    <div class="product-name">
+                        <a href="">Áo Thun Will</a>
+                    </div>
+                    <div class="price-bpx">
+                        <span>250.000đ</span>
+                    </div>
+                    <input
+                        type="number"
+                        name="soluong"
+                        min="1"
+                        max="10"
+                        value="1"
+                    />
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp">
+                    <img src="img/ao7.jpg" alt="" />
+                    <div class="product-name">
+                        <a href="">Áo Thun Popylar</a>
+                    </div>
+                    <div class="price-bpx">
+                        <span>250.000đ</span>
+                    </div>
+                    <input
+                        type="number"
+                        name="soluong"
+                        min="1"
+                        max="10"
+                        value="1"
+                    />
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp">
+                    <img src="img/ao8.jpg" alt="" />
+                    <div class="product-name">
+                        <a href="">Áo Thun Vintage drive</a>
+                    </div>
+                    <div class="price-bpx">
+                        <span>250.000đ</span>
+                    </div>
+                    <input
+                        type="number"
+                        name="soluong"
+                        min="1"
+                        max="10"
+                        value="1"
+                    />
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp">
+                    <img src="img/ao9.jpg" alt="" />
+                    <div class="product-name">
+                        <a href="">Áo Thun Rihanna </a>
+                    </div>
+                    <div class="price-bpx">
+                        <span>250.000đ</span>
+                    </div>
+                    <input
+                        type="number"
+                        name="soluong"
+                        min="1"
+                        max="10"
+                        value="1"
+                    />
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp">
+                    <img src="img/ao10.jpg" alt="" />
+                    <div class="product-name">
+                        <a href="">Áo Thun Bear</a>
+                    </div>
+                    <div class="price-bpx">
+                        <span>250.000đ</span>
+                    </div>
+                    <input
+                        type="number"
+                        name="soluong"
+                        min="1"
+                        max="10"
+                        value="1"
+                    />
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+            </div>
+        </div>
+        <div class="footter-main">
+            <div class="row">
+                <div class="col1-ft">
+                    <h4>Về Chúng Tôi</h4>
+                    <h3>ZONL®</h3>
+                    <p>You do not find the happy life. You make it</p>
+                    <p>© Bản quyền thuộc về ZONL</p>
+                </div>
+                <div class="col2-ft">
+                    <h4>Liên hệ</h4>
+                    <div class="lienhe">
+                        <ul>
+                            <li>
+                                <span class="icon"
+                                    ><i class="fa-solid fa-map-marker-alt"></i
+                                ></span>
+                                <span class="info"><b>Địa chỉ:</b></span>
+                            </li>
+                            <li>
+                                <span class="icon"
+                                    ><i class="fa-solid fa-phone-alt"></i
+                                ></span>
+                                <span class="info"
+                                    ><b>Hotline:</b> 0336 332 677</span
+                                >
+                            </li>
+                            <li class="Email">
+                                <span class="icon"
+                                    ><i class="fa-solid fa-envelope"></i
+                                ></span>
+                                <span class="info">
+                                    <b>Email:</b>
+                                    <a href="mailto:ZONL.vn@gmail.com"
+                                        >ZONL.vn@gmail.com</a
+                                    >
+                                </span>
+                            </li>
+                            <li>
+                                <div id="icon">
+                                    <a
+                                        href="https://www.instagram.com/hoaglog20.07/"
+                                    >
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                                <div id="icon">
+                                    <a
+                                        href="https://www.facebook.com/profile.php?id=100046377260520"
+                                        ><i
+                                            class="fa-brands fa-square-facebook"
+                                        ></i
+                                    ></a>
+                                </sp>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col3-ft">
+                    <h4>Hệ thống cửa hàng</h4>
+                    <p>
+                        Hiện tại ZONL® chỉ hoạt động kinh doanh qua các kênh
+                        trực tuyến: Website, Facebook, Instagram.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="Js/product.js"></script>
+    </body>
+</html>

@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    background-color: bisque;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000; /* Ensure it stays above other content */
+}
+.col1-header {
+    width: 15%;
+    flex: 1;
+    margin: 0 5px;
+}
+
+.col2-header {
+    flex: 4;
+    width: 65%;
+    float: center;
+    margin: 0 10px;
+    text-align: center;
+    font-size: 20px;
+}
+#header-bar {
+    align-items: center;
+    padding: 0;
+}
+#header-bar a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px 0 15px;
+}
+#header-bar a:hover {
+    color: white;
+}
+.col2-header h1 {
+    margin: 10px 0 10px 0;
+}
+.col1-header img {
+    display: block;
+    width: 30%;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+.col3-header {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    width: 20%;
+    justify-content: space-around;
+    margin: 0 5px;
+    padding: 10px;
+}
+.col3-header ul {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+}
+
+.fa-cart-arrow-down,
+.fa-magnifying-glass,
+.fa-regular,
+.fa-solid,
+.fa-user {
+    color: black;
+    font-size: 23px;
+    padding: 10px;
+    margin: 0 10px 0 10px;
+    display: block;
+}
+
+.fa-brands {
+    color: black;
+    font-size: 23px;
+    padding: 0px 10px;
+    margin: 0 10px 0 10px;
+    display: block;
+}
+.footter-main {
+    background-color: bisque;
+    width: 100vw;
+    overflow-x: hidden;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.col1-ft,
+.col2-ft,
+.col3-ft {
+    width: calc(100% / 3);
+    padding: 20px;
+    box-sizing: border-box;
+}
+.col1-ft h4,
+.col1-ft h3,
+.col1-ft p {
+    margin: 10px 0;
+    font-style: monospace;
+    font-size: 15px;
+}
+.col1-ft,
+.col3-ft h4 {
+    font-size: 20px;
+}
+.col3-ft p {
+    font-size: 15px;
+}
+.col2-ft {
+    float: left;
+    padding: 20px;
+    font-style: monospace;
+    font-size: 15px;
+}
+.col2-ft h4 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 20px;
+}
+.lienhe ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lienhe ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.lienhe ul li .icon {
+    flex: 0 0 auto; /* Cho icon không thay đổi kích thước */
+    margin-right: 10px; /* Khoảng cách giữa icon và thông tin */
+}
+
+.lienhe ul li .info {
+    flex: 1; /* Cho phần thông tin chiếm phần còn lại */
+    text-align: left; /* Căn trái thông tin */
+}
+.Email a {
+    color: black;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.thanhtoan {
+    margin-top: 80px;
+}
+.thanhtoan form {
+    background-color: bisque;
+    width: 70%;
+}
+.thanhtoan h2 {
+    font-size: 40px;
+    text-align: center;
+}
+.thongtinnhanhang {
+    width: 70%;
+    border: #000 solid 1px;
+}
+.thongtinnhanhang input {
+    width: 100%;
+}
+#showcart {
+    width: 70%;
+    padding: 20px;
+    background-color: bisque;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 1001;
+    align-items: center;
+}
+
+#showcart table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+#showcart th,
+#showcart td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#showcart th {
+    font-weight: bold;
+    color: #333;
+}
+
+#showcart tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#showcart td {
+    color: #666;
+}
+
+#showcart .total {
+    font-weight: bold;
+    color: #000;
+}
+#showcart a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+table {
+    width: 100%;
+    background-color: bisque;
+}
+
+table td {
+    padding: 5px;
+    border: #000 solid 1px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+table input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.dathangthanhcong h1 {
+    text-align: center;
+}

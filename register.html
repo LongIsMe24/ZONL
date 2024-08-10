@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ZONL Store</title>
+        <link
+            rel="icon"
+            href="\assets\img\Akatsuki-Logo-PNG-Pic.png"
+            type="image/png"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/font/themify-icons-font/themify-icons/themify-icons.css"
+        />
+        <link rel="stylesheet" href="CSS/register.css" />
+    </head>
+    <body>
+        <div class="login">
+            <div class="background-login">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.webp" />
+                    </a>
+                </div>
+                <div class="type">
+                    <p>Đăng Kí</p>
+                    <form name="register-form" onsubmit="return validateForm()">
+                        <input type="text" name="ho" placeholder="Họ" />
+                        <input type="text" name="ten" placeholder="Tên" />
+                        <br />
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="example@gmail.com"
+                        />
+                        <input
+                            type="text"
+                            name="username"
+                            placeholder="Tên tài khoản"
+                        />
+                        <br />
+                        <input
+                            type="password"
+                            name="password"
+                            placeholder="Mật khẩu"
+                        />
+                        <input
+                            type="password"
+                            name="confirm-password"
+                            placeholder="Xác nhận mật khẩu"
+                        />
+                        <br />
+                        <input type="submit" value="Đăng ký" />
+                    </form>
+                    <div class="register">
+                        <span>Bạn đã có tài khoản ?</span>
+                        <a href="login.html"> Đăng nhập </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="Js/App.js"></script>
+    </body>
+</html>

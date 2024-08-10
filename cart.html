@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="CSS/cart.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        />
+    </head>
+    <body>
+        <div>
+            <header>
+                <div class="col1-header">
+                    <a href="index.html">
+                        <img src="img/logo.webp" alt="Logo" />
+                    </a>
+                </div>
+                <div class="col2-header">
+                    <ul id="header-bar">
+                        <a href="index.html">Trang Chủ</a>
+                        <a href="product.html">Sản Phẩm</a>
+                        <a href="">Store</a>
+                    </ul>
+                </div>
+                <div class="col3-header">
+                    <a href="register.html"
+                        ><i class="fa-regular fa-user"></i>
+                    </a>
+                    <a onclick="showcart(event)" href=""
+                        ><i class="fa-solid fa-cart-arrow-down"></i
+                    ></a>
+                </div>
+            </header>
+        </div>
+        <div class="thanhtoan">
+            <h2>THÔNG TIN NHẬN HÀNG</h2>
+            <div>
+                <table class="thongtinnhanhang">
+                    <tbody id="thongtinnhanhang">
+                        <tr>
+                            <td><label for="hoTen">Họ tên: </label></td>
+                            <td><input type="text" id="hoTen" required /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="diaChi">Địa chỉ: </label></td>
+                            <td><input type="text" id="diaChi" required /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="dienThoai">Điện thoại: </label></td>
+                            <td>
+                                <input type="number" id="dienThoai" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email: </label></td>
+                            <td><input type="email" id="email" required /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h2>Giỏ Hàng</h2>
+            <div id="showcart">
+                <table>
+                    <tr>
+                        <th>STT</th>
+                        <th>Hình</th>
+                        <th>Tên Sản Phẩm</th>
+                        <th>Đơn Giá</th>
+                        <th>Số Lượng</th>
+                        <th>Thành Tiền</th>
+                        <th>Xoá</th>
+                    </tr>
+                    <tbody id="mycart"></tbody>
+                </table>
+            </div>
+            <div class="col-bt">
+                <button class="dongy" onclick="dongydathang()">
+                    Đồng ý đặt hàng
+                </button>
+            </div>
+        </div>
+        <div class="footter-main">
+            <div class="row">
+                <div class="col1-ft">
+                    <h4>Về Chúng Tôi</h4>
+                    <h3>ZONL®</h3>
+                    <p>You do not find the happy life. You make it</p>
+                    <p>© Bản quyền thuộc về ZONL</p>
+                </div>
+                <div class="col2-ft">
+                    <h4>Liên hệ</h4>
+                    <div class="lienhe">
+                        <ul>
+                            <li>
+                                <span class="icon"
+                                    ><i class="fa-solid fa-map-marker-alt"></i
+                                ></span>
+                                <span class="info"><b>Địa chỉ:</b></span>
+                            </li>
+                            <li>
+                                <span class="icon"
+                                    ><i class="fa-solid fa-phone-alt"></i
+                                ></span>
+                                <span class="info"
+                                    ><b>Hotline:</b> 0336 332 677</span
+                                >
+                            </li>
+                            <li class="Email">
+                                <span class="icon"
+                                    ><i class="fa-solid fa-envelope"></i
+                                ></span>
+                                <span class="info">
+                                    <b>Email:</b>
+                                    <a href="mailto:ZONL.vn@gmail.com"
+                                        >ZONL.vn@gmail.com</a
+                                    >
+                                </span>
+                            </li>
+                            <li>
+                                <div id="icon">
+                                    <a
+                                        href="https://www.instagram.com/hoaglog20.07/"
+                                    >
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                                <div id="icon">
+                                    <a
+                                        href="https://www.facebook.com/profile.php?id=100046377260520"
+                                        ><i
+                                            class="fa-brands fa-square-facebook"
+                                        ></i
+                                    ></a>
+                                </sp>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col3-ft">
+                    <h4>Hệ thống cửa hàng</h4>
+                    <p>
+                        Hiện tại ZONL® chỉ hoạt động kinh doanh qua các kênh
+                        trực tuyến: Website, Facebook, Instagram.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="Js/App.js"></script>
+        <script>
+            showgiohang_trangthanhtoan();
+        </script>
+    </body>
+</html>

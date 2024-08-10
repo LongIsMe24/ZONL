@@ -1,0 +1,76 @@
+.background-login {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        45deg,
+        rgb(65, 88, 208) 40%,
+        rgb(200, 80, 192) 50%,
+        rgb(225, 204, 112)
+    );
+}
+.logo > a > img {
+    margin: 10px 10px 10px 10px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+.type {
+    text-align: center;
+    background: #91a7d6;
+    width: 800px;
+    height: auto;
+    padding: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 20px 0px #000;
+}
+.type > p {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(201, 23, 23);
+}
+
+.type input[type="password"],
+.type input[type="text"] {
+    background: none;
+    outline: none;
+    width: 210px;
+    height: 40px;
+    border-radius: 40px;
+    padding: 0px 15px;
+    margin: 15px 0px;
+    border: solid 2px #002cff;
+    transition: 1s;
+}
+.type input[type="password"]:focus,
+.type input[type="text"]:focus {
+    width: 320px;
+    border-color: rgb(219, 29, 38);
+    transition: 1s;
+}
+.type input[type="submit"] {
+    background: blue;
+    outline: none;
+    width: 160px;
+    height: 40px;
+    border-radius: 40px;
+    margin: 15px 0px;
+    border: solid 2px #002cff;
+    color: #fff;
+    font-size: 18px;
+    transition: 1s;
+}
+.type input[type="submit"]:hover {
+    background: #bb3c3c;
+    transition: 1s;
+}
+
+.register {
+    display: inline-flex;
+}
+.register > a {
+    padding: 0 10px;
+}
